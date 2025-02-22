@@ -1,0 +1,11 @@
+services:
+  fastapi-app:
+    build: .
+    container_name: fastapi_firefly_veryfi
+    restart: always
+    volumes:
+      - .:/app  # Mounts local directory for live updates
+    ports:
+      - "82:82"  # Exposes FastAPI on port 82
+    env_file:
+      - .env  # Load environment variables

@@ -1,0 +1,11 @@
+fastapi==0.115.8
+pydantic==2.10.6
+pytest==8.3.4
+Requests==2.32.3
+httpx
+requests-mock
+pytest-cov
+coverage
+uvicorn
+openpyxl
+
